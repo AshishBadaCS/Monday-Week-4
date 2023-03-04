@@ -17,15 +17,3 @@ private:
   int studentID;
   static int ID;
 };
-
-void Student::setName(string firstName, string lastName) {
-  this->firstName = firstName;
-  this->lastName = lastName;
-}
-
-void Student::updateName() {
-  cout << "Enter the new first name: ";
-  cin >> firstName;
-  cout << "Enter the new last name: ";
-  cin >> lastName;
-}

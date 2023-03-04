@@ -10,8 +10,9 @@ const int AP_STUDENTS = 2;
 const int NBR_STUDENTS = 3;
 
 int main() {
-  Student students_ap[AP_STUDENTS] = {"Mike Miller", "Linda Lawson"};
-  
+  Student students_ap[AP_STUDENTS] = {Student("Mike", "Miller"),
+                                      Student("Linda", "Lawson")};
+
   Student students[NBR_STUDENTS];
   cout << "Enter scores for AP students\n";
   for (int i = 0; i < AP_STUDENTS; i++)
